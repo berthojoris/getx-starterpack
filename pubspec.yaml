@@ -15,6 +15,8 @@ dependencies:
   firebase: 9.0.2
   cloud_firestore: 3.1.13
   loader_overlay: 2.0.6
+  font_awesome_flutter: 10.1.0
+  awesome_notifications: 0.6.21
   flutter:
     sdk: flutter
 
