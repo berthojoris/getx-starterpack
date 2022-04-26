@@ -108,13 +108,15 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildBody() {
     if (controller.uiLoading) {
       return Scaffold(
-          body: Container(
-              margin: FxSpacing.top(FxSpacing.safeAreaTop(context) + 20),
-              child: LoadingEffect.getSearchLoadingScreen(
-                context,
-                theme,
-                customTheme,
-              )));
+        body: Container(
+          margin: FxSpacing.top(FxSpacing.safeAreaTop(context) + 20),
+          child: LoadingEffect.getSearchLoadingScreen(
+            context,
+            theme,
+            customTheme,
+          ),
+        ),
+      );
     } else {
       return Scaffold(
         body: ListView(
@@ -132,7 +134,7 @@ class _HomeScreenState extends State<HomeScreen> {
               clipBehavior: Clip.antiAliasWithSaveLayer,
               child: Stack(
                 children: [
-                  Image(
+                  const Image(
                     height: 210,
                     fit: BoxFit.cover,
                     image: AssetImage('assets/images/apps/muvi/banner.jpg'),
@@ -166,7 +168,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         FxContainer.none(
                             padding: FxSpacing.fromLTRB(12, 6, 12, 6),
                             color: customTheme.muviPrimary,
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                                 topLeft: Radius.circular(16),
                                 bottomLeft: Radius.circular(16)),
                             child: FxText.button(
