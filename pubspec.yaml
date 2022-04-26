@@ -65,6 +65,7 @@ assets:
     ##Muvi
     - assets/images/apps/muvi/
     - lib/apps/muvi/data/
+
     #Languages
     - assets/lang/
 
