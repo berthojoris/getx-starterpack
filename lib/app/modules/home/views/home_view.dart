@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -9,15 +10,17 @@ class HomeView extends GetView<HomeController> {
 
   @override
   Widget build(BuildContext context) {
+    var tanggal = DateFormat.yMMMMEEEEd('id').format(DateTime.now());
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('HomeView'),
         centerTitle: true,
       ),
-      body: const Center(
+      body: Center(
         child: Text(
-          'HomeView is working',
-          style: TextStyle(fontSize: 20),
+          tanggal,
+          style: const TextStyle(fontSize: 20),
         ),
       ),
     );

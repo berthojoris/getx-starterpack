@@ -13,6 +13,7 @@ Future<void> main() async {
         title: "Staterpack App",
         initialRoute: AppPages.INITIAL,
         getPages: AppPages.routes,
+        debugShowCheckedModeBanner: false,
       ),
     ),
   );
