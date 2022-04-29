@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:digital/theme/app_theme.dart';
 import 'package:get/get.dart';
 import '../controllers/login_controller.dart';
 import 'package:flutx/flutx.dart';
+import 'package:digital/theme/app_theme.dart';
 
 class LoginView extends GetView<LoginController> {
   const LoginView({Key? key}) : super(key: key);
