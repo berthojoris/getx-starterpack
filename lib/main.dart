@@ -11,7 +11,7 @@ Future<void> main() async {
     (_) => runApp(
       GetMaterialApp(
         title: "Staterpack App",
-        initialRoute: Routes.LOGIN,
+        initialRoute: Routes.SPLASH_SCREEN,
         getPages: AppPages.routes,
         debugShowCheckedModeBanner: false,
       ),

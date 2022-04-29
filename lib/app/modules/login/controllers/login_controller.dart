@@ -1,20 +1,16 @@
 import 'package:get/get.dart';
 
 class LoginController extends GetxController {
-  //TODO: Implement LoginController
-
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
+  RxBool loadingStatus = true.obs;
+  void login() async {
+    //
   }
 
-  @override
-  void onReady() {
-    super.onReady();
+  void register() async {
+    //
   }
 
-  @override
-  void onClose() {}
-  void increment() => count.value++;
+  void forgotPassword() async {
+    //
+  }
 }
